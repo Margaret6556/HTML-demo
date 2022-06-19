@@ -1,0 +1,45 @@
+body {
+  background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/88/15/HYUtdS.jpg");
+  font-family: "Times New Roman", sans-serif;
+  max-width: 100%;
+}
+
+.weather-app {
+  width: 900px;
+  display: block;
+  margin: 80px auto;
+  height: 500px;
+  padding: 20px;
+  background-color: black;
+  border: 2px solid #dadde1;
+  border-style: solid;
+  border-radius: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+
+search-form {
+  width: 80%;
+  padding: 10px;
+  margin: 20px;
+  justify-content: space-evenly;
+}
+
+.col-3 {
+  justify-content: end;
+}
+
+ul {
+  display: inline-block;
+  color: rgb(136, 214, 219);
+  font-size: 20px;
+  list-style: none;
+  padding: 20px;
+}
