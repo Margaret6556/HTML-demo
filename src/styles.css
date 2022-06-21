@@ -1,3 +1,5 @@
+
+
 body {
   background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/88/15/HYUtdS.jpg");
   font-family: "Times New Roman", sans-serif;
@@ -24,22 +26,22 @@ h1 {
 h3 {
   text-align: center;
   color: white;
+}
 
 search-form {
-  width: 80%;
+  width: 500px;
   padding: 10px;
   margin: 20px;
-  justify-content: space-evenly;
 }
 
-.col-3 {
-  justify-content: end;
-}
 
 ul {
   display: inline-block;
-  color: rgb(136, 214, 219);
+  color: #fff;
   font-size: 20px;
   list-style: none;
   padding: 20px;
+}
+temperature {
+  color:beige;
 }
