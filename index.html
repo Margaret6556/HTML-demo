@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- CSS only -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
-    />
     />
     <link rel="stylesheet" href="src/styles.css" />
     <script
@@ -21,60 +21,59 @@
   <body>
     <div class="flex-container">
       <div class="weather-app">
-        <div class="col-8">
-          <form class="search-form" id="search-form">
-            <input
-              type="search"
-              placeholder="Type a city..."
-              autofocus="on"
-              autocomplete="off"
-              id="city-input"
-              class="form-control shadow-sm"
-            />
-          </form>
-          
-        </div>
-          <div class="col-2 ml-4">
+        <div class="row">
+          <div class="col-8">
+            <form class="search-form" id="search-form">
+              <input
+                type="search"
+                placeholder="Type a city..."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </form>
+          </div>
+          <div class="col-2">
             <input
               type="submit"
               value="Search"
               class="form-control btn btn-primary shadow-sm"
             />
           </div>
+        </div>
 
-          <h1 id="city">Portugal</h1>
-          <h3 id="date">
-            Monday 17:50 <br />
-            Partly Cloudy
-          </h3>
+        <h1 id="city">Portugal</h1>
+        <h3 id="date">
+          Monday 17:50 <br />
+          Partly Cloudy
+        </h3>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-8">
-                <div class="clearfix">
-                  <img
-                    src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Status-weather-few-clouds-icon.png"
-                    alt="Cloudy icon"
-                    width="200"
-                    class="weather-icon float-left"
-                  />
-                  <span class="temperature" id="temperature">19</span
-                  ><span class="units">
-                    <a href="#" id="celsius-link">°C</a> |
-                    <a href="#" id="fahrenheit-link">°F</a>
-                  </span>
-                </div>
-              </div>
-                <div class="col-4 float-right">
-                  <ul>
-                    <li>Precipitation: 10%</li>
-                    <li>Humidity: 77%</li>
-                    <li>Wind: 8 km/h</li>
-                  </ul>
-                </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Status-weather-few-clouds-icon.png"
+                alt="Cloudy icon"
+                width="200"
+                class="weather-icon float-left"
+              />
+              <h2 class="temperature" id="temperature">19</h2>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
             </div>
           </div>
+          <div class="col-md-6">
+            <ul>
+              <li>Precipitation: 10%</li>
+              <li>Humidity: 77%</li>
+              <li>Wind: 8 km/h</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
     <script src="src/index.js"></script>
   </body>
