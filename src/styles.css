@@ -7,7 +7,6 @@ body {
 ul {
   display: inline-block;
   color: #fff;
-
   list-style: none;
   padding: 20px;
 }
@@ -26,12 +25,6 @@ h3 {
   color: white;
 }
 
-search-form {
-  width: 500px;
-  padding: 10px;
-  margin: 20px;
-}
-
 .weather-app {
   position: relative;
   width: 900px;
@@ -46,11 +39,23 @@ search-form {
 }
 
 .row {
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 10px 0 auto;
+  display: flex;
+  padding: 20px 20px;
 }
-.units {
-  font-size: 2rem;
+.temperature {
+  font-size: 4rem;
+}
+
+span {
+  color: white;
+}
+.col .left {
+  display: flex;
+  clear:right;
+}
+
+.col .right {
+  display: flex;
+  align-items: center;
+  font: 2rem;
 }

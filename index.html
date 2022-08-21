@@ -23,7 +23,7 @@
       <div class="weather-app">
         <div class="row">
           <div class="col-8">
-            <form class="search-form" id="search-form">
+            <form class="search-form justify-content-center flex flex-wrap" id="search-form">
               <input
                 type="search"
                 placeholder="Type a city..."
@@ -34,7 +34,7 @@
               />
             </form>
           </div>
-          <div class="col-2">
+          <div class="col-4">
             <input
               type="submit"
               value="Search"
@@ -49,23 +49,20 @@
           Partly Cloudy
         </h3>
 
-        <div class="container">
+        <div class="flex-container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-8 d-flex justify-content-around flex-wrap" id="left">
               <img
                 src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Status-weather-few-clouds-icon.png"
                 alt="Cloudy icon"
-                width="200"
+                width="300"
                 class="weather-icon float-left"
               />
               <h2 class="temperature" id="temperature">19</h2>
-              <span class="units">
-                <a href="#" id="celsius-link">°C</a> |
-                <a href="#" id="fahrenheit-link">°F</a>
-              </span>
-            </div>
-          </div>
-          <div class="col-md-6">
+              <span id="celsius-link">°C     </span> 
+              <span id="fahrenheit-link">°F</span>
+        </div>
+          <div class="col-4" id="right">
             <ul>
               <li>Precipitation: 10%</li>
               <li>Humidity: 77%</li>
